@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.555">
+<meta name="generator" content="quarto-1.6.42">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>KPZ - Пример использования</title>
+<title>Как запустить приложение – KPZ</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -35,10 +69,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b53751a350365c71b6c909e95f209ed1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-facd30bd6cd4d5c9567c8a5b7d77199b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -83,7 +117,7 @@ ul.task-list li input[type="checkbox"] {
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -93,39 +127,35 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Описание</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./install.html"> 
+    <a class="nav-link active" href="./install.html" aria-current="page"> 
 <span class="menu-text">Инструкция</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Функции</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-">    
         <li>
-    <a class="dropdown-item" href="./ML.qmd">
+    <a class="dropdown-item" href="./ML.html">
  <span class="dropdown-text">Фаза ML</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./ETL.qmd">
+    <a class="dropdown-item" href="./ETL.html">
  <span class="dropdown-text">Фаза ETL</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./ETL.qmd">
+    <a class="dropdown-item" href="./server.html">
  <span class="dropdown-text">Сервер</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="./example.html"> 
 <span class="menu-text">Пример использования</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link active" href="./example.html" aria-current="page"> 
-<span class="menu-text">О проекте</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
-          <div class="quarto-navbar-tools">
+            <div class="quarto-navbar-tools">
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -135,14 +165,28 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Навигация по странице</h2>
+   
+  <ul>
+  <li><a href="#требования" id="toc-требования" class="nav-link active" data-scroll-target="#требования">Требования</a></li>
+  <li><a href="#инструкция" id="toc-инструкция" class="nav-link" data-scroll-target="#инструкция">Инструкция</a>
+  <ul class="collapse">
+  <li><a href="#как-запустить-приложение" id="toc-как-запустить-приложение" class="nav-link" data-scroll-target="#как-запустить-приложение">Как запустить приложение</a>
+  <ul class="collapse">
+  <li><a href="#где-взять-данные" id="toc-где-взять-данные" class="nav-link" data-scroll-target="#где-взять-данные">Где взять данные</a></li>
+  <li><a href="#особенности" id="toc-особенности" class="nav-link" data-scroll-target="#особенности">Особенности</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Пример использования</h1>
+<h1 class="title">Как запустить приложение</h1>
 </div>
 
 
@@ -159,26 +203,75 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="требования" class="level1">
+<h1>Требования</h1>
+<ul>
+<li><p>Установленный R (https://www.r-project.org/) (R ≥ 4.0)</p></li>
+<li><p>Установленный RStudio (рекомендуется, но не обязательно)</p></li>
+<li><p>Установленные пакеты:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="fu">c</span>(<span class="st">"shiny"</span>, <span class="st">"httr"</span>, <span class="st">"dplyr"</span>, <span class="st">"purrr"</span>, <span class="st">"DT"</span>, <span class="st">"shinycssloaders"</span>, </span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="st">"plotly"</span>, <span class="st">"ggplot2"</span>, <span class="st">"tidyr"</span>, <span class="st">"fastDummies"</span>, <span class="st">"shinyjs"</span>, <span class="st">"shinyBS"</span>, <span class="st">"duckdb"</span>, </span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="st">"DBI"</span>, <span class="st">"litedown"</span>, <span class="st">"markdown"</span>, <span class="st">"stringr"</span>, <span class="st">"jsonlite"</span>, <span class="st">"tools"</span>, <span class="st">"lubridate"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+</ul>
+</section>
+<section id="инструкция" class="level1">
+<h1>Инструкция</h1>
+<section id="как-запустить-приложение" class="level2">
+<h2 class="anchored" data-anchor-id="как-запустить-приложение">Как запустить приложение</h2>
 <ol type="1">
-<li>Введите логин пользователя GitHub (например, “torvalds”)</li>
-<li>Используйте фильтры для:
+<li><p>Склонируйте репозиторий:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone https://github.com/NotAccess/KPZ</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p>Установите рабочую директорию в R:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">setwd</span>(<span class="st">"путь/к/папке/с/файлами"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p>Запустите приложение</p>
 <ul>
-<li>Выбора диапазона звёзд/участников</li>
-<li>Фильтрации по языкам и лицензиям</li>
-<li>Настройки временных диапазонов</li>
-</ul></li>
-<li>Исследуйте вкладки:
+<li>Запуск через консоль в в RStudio:</li>
+</ul>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>  <span class="fu">shiny::runApp()</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ul>
-<li><strong>Репозитории</strong>: Детализация проектов</li>
-<li><strong>Коммиты</strong>: Полная история изменений</li>
-<li><strong>События</strong>: Графики активности</li>
-<li><strong>Языки</strong>: Распределение технологий</li>
-<li><strong>Активность</strong>: Тепловая карта коммитов</li>
-<li><strong>МГК</strong>: 2D-проекция пространства коммитов</li>
+<li>Запуск через RStudio:
+<ol type="1">
+<li>Откройте склонироавнный репозиторий в RStudio</li>
+<li>Откройте файл app.R</li>
+<li>Запустите файл app.R с помощью кнопки в правом верхнем углу Run <img src="img/run.png" class="img-fluid" alt="run"></li>
+</ol></li>
 </ul></li>
+<li><p>Настройте переменные окружения:</p>
+<ul>
+<li><p>Выберите вкладку настройки</p></li>
+<li><p>Заполните переменные:</p>
+<pre><code>GITHUB_TOKEN=`ваш_токен`
+YANDEX_FOLDER_ID=`идентификатор_каталога`
+YANDEX_API_KEY=`ваш_yandex_api_ключ`
+DUCK_DB=`название_базы_данных`
+COMMITS_TABLE=`название_таблицы_коммитов`</code></pre>
+<p><img src="img/par.jpeg" class="img-fluid"></p></li>
+<li><p>Сохраните настройки</p></li>
+</ul></li>
+<li><p>Вновь запустите приложение</p></li>
 </ol>
+<section id="где-взять-данные" class="level3">
+<h3 class="anchored" data-anchor-id="где-взять-данные">Где взять данные</h3>
+<ul>
+<li><code>GITHUB_TOKEN</code>: Создайте в <a href="https://github.com/settings/tokens">настройках GitHub</a> <a href="https://github.com/NotAccess/KPZ/wiki/Token">инструкция по созданию</a></li>
+<li><code>YANDEX_FOLDER_ID</code>: Идентификатор каталога в <a href="https://console.cloud.yandex.ru/folders">Yandex Cloud</a></li>
+<li><code>YANDEX_API_KEY</code>: Создайте в сервисном аккаунте на странице каталога</li>
+<li><code>DUCK_DB</code> и <code>COMMITS_TABLE</code> могут иметь любое название</li>
+</ul>
+</section>
+<section id="особенности" class="level3">
+<h3 class="anchored" data-anchor-id="особенности">Особенности</h3>
+<ul>
+<li>Без GitHub токена работа с API ограничена 60 запросами/час</li>
+<li>Все переменные из <code>.Renviron</code> должны быть указаны БЕЗ пробелов вокруг <code>=</code></li>
+<li>Файл <code>.Renviron</code> должен находиться в корне проекта</li>
+<li>После изменения переменных всегда перезагружайте R сессию!</li>
+</ul>
 
 
+</section>
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -216,18 +309,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -259,7 +341,27 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
       var filterRegex = new RegExp('/' + window.location.host + '/');
@@ -267,7 +369,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {
@@ -364,7 +466,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {

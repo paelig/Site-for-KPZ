@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.555">
+<meta name="generator" content="quarto-1.6.42">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>KPZ - Как запустить приложение</title>
+<title>Комплексное программное задание (KPZ): Анализ GitHub пользователя – KPZ</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -33,7 +33,7 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -69,10 +69,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b53751a350365c71b6c909e95f209ed1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-facd30bd6cd4d5c9567c8a5b7d77199b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -117,21 +117,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link active" href="./index.html" aria-current="page"> 
 <span class="menu-text">Описание</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./install.html" aria-current="page"> 
+    <a class="nav-link" href="./install.html"> 
 <span class="menu-text">Инструкция</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Функции</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-">    
@@ -153,13 +153,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <a class="nav-link" href="./example.html"> 
 <span class="menu-text">Пример использования</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
-<span class="menu-text">О проекте</span></a>
-  </li>  
 </ul>
           </div> <!-- /navcollapse -->
-          <div class="quarto-navbar-tools">
+            <div class="quarto-navbar-tools">
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -173,15 +169,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Навигация по странице</h2>
    
   <ul>
-  <li><a href="#требования" id="toc-требования" class="nav-link active" data-scroll-target="#требования">Требования</a></li>
-  <li><a href="#инструкция" id="toc-инструкция" class="nav-link" data-scroll-target="#инструкция">Инструкция</a>
-  <ul class="collapse">
-  <li><a href="#как-запустить-приложение" id="toc-как-запустить-приложение" class="nav-link" data-scroll-target="#как-запустить-приложение">Как запустить приложение</a>
-  <ul class="collapse">
-  <li><a href="#где-взять-данные" id="toc-где-взять-данные" class="nav-link" data-scroll-target="#где-взять-данные">Где взять данные</a></li>
-  <li><a href="#особенности" id="toc-особенности" class="nav-link" data-scroll-target="#особенности">Особенности</a></li>
-  </ul></li>
-  </ul></li>
+  <li><a href="#функциональность" id="toc-функциональность" class="nav-link active" data-scroll-target="#функциональность">Функциональность</a></li>
+  <li><a href="#технологический-стек" id="toc-технологический-стек" class="nav-link" data-scroll-target="#технологический-стек">Технологический стек</a></li>
+  <li><a href="#архитектура-решения" id="toc-архитектура-решения" class="nav-link" data-scroll-target="#архитектура-решения">Архитектура решения</a></li>
+  <li><a href="#особенности-реализации" id="toc-особенности-реализации" class="nav-link" data-scroll-target="#особенности-реализации">Особенности реализации</a></li>
   </ul>
 </nav>
     </div>
@@ -190,7 +181,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Как запустить приложение</h1>
+<h1 class="title">Комплексное программное задание (KPZ): Анализ GitHub пользователя</h1>
 </div>
 
 
@@ -207,74 +198,94 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="требования" class="level1">
-<h1>Требования</h1>
+<p>Это Shiny-приложение позволяет проводить комплексный анализ активности пользователя GitHub. Приложение предоставляет интерактивные инструменты для изучения репозиториев, коммитов, языков программирования и паттернов активности с использованием современных методов визуализации и ML.</p>
+<section id="функциональность" class="level1">
+<h1>Функциональность</h1>
 <ul>
-<li><p>Установленный R (https://www.r-project.org/) (R ≥ 4.0)</p></li>
-<li><p>Установленный RStudio (рекомендуется, но не обязательно)</p></li>
-<li><p>Установленные пакеты:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="fu">c</span>(<span class="st">"shiny"</span>, <span class="st">"httr"</span>, <span class="st">"dplyr"</span>, <span class="st">"purrr"</span>, <span class="st">"DT"</span>, <span class="st">"shinycssloaders"</span>, </span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="st">"plotly"</span>, <span class="st">"ggplot2"</span>, <span class="st">"tidyr"</span>, <span class="st">"fastDummies"</span>, <span class="st">"shinyjs"</span>, <span class="st">"shinyBS"</span>, <span class="st">"duckdb"</span>, </span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="st">"DBI"</span>, <span class="st">"litedown"</span>, <span class="st">"markdown"</span>, <span class="st">"stringr"</span>, <span class="st">"jsonlite"</span>, <span class="st">"tools"</span>, <span class="st">"lubridate"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><strong>Анализ репозиториев</strong>
+<ul>
+<li>Загрузка и фильтрация репозиториев по 8+ параметрам</li>
+<li>Детальная статистика: звёзды, форки, issues, участники</li>
+<li>Интерактивные временные фильтры (создание/обновление)</li>
+<li>Визуализация метрик в виде интерактивных карточек</li>
+</ul></li>
+<li><strong>Анализ коммитов</strong>
+<ul>
+<li>Полная история изменений с дезагрегацией до уровня файлов</li>
+<li>Расширенная аналитика: добавления/удаления, типы изменений</li>
+<li>Интеллектуальная группировка по авторам и репозиториям</li>
+</ul></li>
+<li><strong>Продвинутая аналитика</strong>
+<ul>
+<li><strong>Временные паттерны</strong>:
+<ul>
+<li>Тепловая карта активности (дни недели × часы)</li>
+<li>Динамика событий (issues/форки) на временной шкале</li>
+</ul></li>
+<li><strong>Языковой анализ</strong>:
+<ul>
+<li>Распределение языков программирования</li>
+<li>Детекция файлов по расширениям</li>
+</ul></li>
+<li><strong>ML-анализ</strong>:
+<ul>
+<li>PCA-визуализация многомерного пространства коммитов</li>
+<li>Интерактивное исследование кластеров активности</li>
+</ul></li>
+</ul></li>
 </ul>
 </section>
-<section id="инструкция" class="level1">
-<h1>Инструкция</h1>
-<section id="как-запустить-приложение" class="level2">
-<h2 class="anchored" data-anchor-id="как-запустить-приложение">Как запустить приложение</h2>
-<ol type="1">
-<li><p>Склонируйте репозиторий:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone https://github.com/NotAccess/KPZ</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
-<li><p>Установите рабочую директорию в R:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">setwd</span>(<span class="st">"путь/к/папке/с/файлами"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
-<li><p>Запустите приложение</p>
+<section id="технологический-стек" class="level1">
+<h1>Технологический стек</h1>
 <ul>
-<li>Запуск через консоль в в RStudio:</li>
-</ul>
-<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>  <span class="fu">shiny::runApp()</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<ul>
-<li>Запуск через RStudio:
-<ol type="1">
-<li>Откройте склонироавнный репозиторий в RStudio</li>
-<li>Откройте файл app.R</li>
-<li>Запустите файл app.R с помощью кнопки в правом верхнем углу Run <img src="img/run.png" class="img-fluid" alt="run"></li>
-</ol></li>
-</ul></li>
-<li><p>Настройте переменные окружения:</p>
-<ul>
-<li><p>Выберите вкладку настройки</p></li>
-<li><p>Заполните переменные:</p>
-<pre><code>GITHUB_TOKEN=`ваш_токен`
-YANDEX_FOLDER_ID=`идентификатор_каталога`
-YANDEX_API_KEY=`ваш_yandex_api_ключ`
-DUCK_DB=`название_базы_данных`
-COMMITS_TABLE=`название_таблицы_коммитов`</code></pre>
-<p><img src="img/par.jpeg" class="img-fluid"></p></li>
-<li><p>Сохраните настройки</p></li>
-</ul></li>
-<li><p>Вновь запустите приложение</p></li>
-</ol>
-<section id="где-взять-данные" class="level3">
-<h3 class="anchored" data-anchor-id="где-взять-данные">Где взять данные</h3>
-<ul>
-<li><code>GITHUB_TOKEN</code>: Создайте в <a href="https://github.com/settings/tokens">настройках GitHub</a> <a href="https://github.com/NotAccess/KPZ/wiki/Token">инструкция по созданию</a></li>
-<li><code>YANDEX_FOLDER_ID</code>: Идентификатор каталога в <a href="https://console.cloud.yandex.ru/folders">Yandex Cloud</a></li>
-<li><code>YANDEX_API_KEY</code>: Создайте в сервисном аккаунте на странице каталога</li>
-<li><code>DUCK_DB</code> и <code>COMMITS_TABLE</code> могут иметь любое название</li>
+<li><strong>Backend</strong>: R + Shiny</li>
+<li><strong>Data processing</strong>: dplyr, purrr, httr</li>
+<li><strong>Работа с базами данных:</strong> duckdb, DBI</li>
+<li><strong>Визуализация</strong>: ggplot2, plotly, heatmaps</li>
+<li><strong>ML</strong>: PCA</li>
+<li><strong>AI-модель:</strong> YandexGPT (через Yandex Cloud)</li>
+<li><strong>Интеграции</strong>: GitHub API v3</li>
 </ul>
 </section>
-<section id="особенности" class="level3">
-<h3 class="anchored" data-anchor-id="особенности">Особенности</h3>
+<section id="архитектура-решения" class="level1">
+<h1>Архитектура решения</h1>
+<div class="sourceCode" id="cb1"><pre class="sourceCode s code-with-copy"><code class="sourceCode gnuassembler"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>project<span class="op">/</span> </span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>├── app.R             <span class="co"># Главный файл</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>├── server<span class="op">/</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>│ ├── server.R        <span class="co"># Главный серверный модуль</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>│ ├── ETL.R           <span class="co"># Пайплайны данных (API → DataFrame)</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>│ ├── ML.R            <span class="co"># ML-модели и преобразования</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>│ └── data<span class="op">/</span>  </span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="op">|</span> │ ├── promt         <span class="co"># Промт для ML-модели </span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="op">|</span> │ └── schema.json   <span class="co"># Схема для отчета</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>├── ui<span class="op">/</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>│ └── ui.R            <span class="co"># Пользовательский интерфейс</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>└── README.md         <span class="co"># Документация</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="особенности-реализации" class="level1">
+<h1>Особенности реализации</h1>
 <ul>
-<li>Без GitHub токена работа с API ограничена 60 запросами/час</li>
-<li>Все переменные из <code>.Renviron</code> должны быть указаны БЕЗ пробелов вокруг <code>=</code></li>
-<li>Файл <code>.Renviron</code> должен находиться в корне проекта</li>
-<li>После изменения переменных всегда перезагружайте R сессию!</li>
+<li><strong>Оптимизация API-запросов</strong>:
+<ul>
+<li>Пагинация результатов</li>
+<li>Параллельная загрузка метаданных</li>
+<li>Кэширование токена авторизации</li>
+</ul></li>
+<li><strong>Динамический UI</strong>:
+<ul>
+<li>Сворачиваемые фильтры</li>
+<li>Прогресс-бары для долгих операций</li>
+<li>Интерактивные подсказки</li>
+</ul></li>
+<li><strong>ML-пайплайн</strong>:
+<ul>
+<li>Автоматическая обработка категориальных признаков</li>
+<li>PCA с настройкой параметров</li>
+<li>Интерактивная визуализация результатов</li>
+</ul></li>
 </ul>
 
 
-</section>
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -313,18 +324,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -356,7 +356,27 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
       var filterRegex = new RegExp('/' + window.location.host + '/');
@@ -364,7 +384,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {
@@ -461,7 +481,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
